@@ -1,0 +1,21 @@
+/*Defining image size and animation settings*/
+
+img:hover {
+    margin: 0%;
+    width: 100px;
+    height: 100px;
+    animation-name: rotateImage;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+/*idea to make image rotate clockwise while going in a square motion*/
+
+@keyframes rotateImage {
+    0% {left: 0px; top: 0px; transform: rotate(0deg);}
+    25% {left: 200px; top: 0px; transform: rotate(90deg);}
+    50% {left: 200px; top: 200px; transform: rotate(180deg);}
+    75% {left: 0px; top: 200px; transform: rotate(270deg);}
+    100%{left: 0px; top: 0px; transform: rotate(360deg);}
+}
